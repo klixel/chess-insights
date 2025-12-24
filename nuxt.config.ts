@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   components: true,
   debug: true,
   ssr: false,
+  target: 'static',
   css: [
     'bootstrap/dist/css/bootstrap.css',
     '~/assets/main.css',
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
     { src: '~/plugins/fontawesome.js', mode: 'client'}
   ],
   app:{
+    baseURL: '/chess-insights/',
     head: {
       script: [
         {
@@ -41,7 +43,7 @@ export default defineNuxtConfig({
 
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/chess-insights/favicon.ico' },
       ],
     },
 
