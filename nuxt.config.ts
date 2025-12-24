@@ -5,7 +5,9 @@ export default defineNuxtConfig({
   components: true,
   debug: true,
   ssr: false,
-  target: 'static',
+  nitro: {
+    preset: 'static'
+  },
   css: [
     'bootstrap/dist/css/bootstrap.css',
     '~/assets/main.css',
