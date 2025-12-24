@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     { src: '~/plugins/fontawesome.js', mode: 'client'}
   ],
   app:{
+    baseURL: '/chess-insights/',
     head: {
       script: [
         {
@@ -41,7 +42,7 @@ export default defineNuxtConfig({
 
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/chess-insights/favicon.ico' },
       ],
     },
 
